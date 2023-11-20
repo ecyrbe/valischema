@@ -1,0 +1,60 @@
+{
+  "name": "valischema",
+  "version": "1.0.0",
+  "description": "json schema for valibot",
+  "keywords": [
+    "valibot",
+    "json schema"
+  ],
+  "author": "ecyrbe",
+  "homepage": "https://github.com/ecyrbe/valischema",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ecyrbe/valischema"
+  },
+  "license": "MIT",
+  "type": "module",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./lib/index.d.ts",
+        "default": "./lib/index.js"
+      },
+      "require": {
+        "types": "./lib/index.d.cts",
+        "default": "./lib/index.cjs"
+      }
+    }
+  },
+  "sideEffects": false,
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "vitest",
+    "coverage": "vitest run --coverage",
+    "lint": "eslint \"src/**/*.ts*\" && tsc --noEmit",
+    "format": "prettier --write ./src",
+    "format.check": "prettier --check ./src",
+    "build": "tsup"
+  },
+  "devDependencies": {
+    "@types/eslint": "8.44.7",
+    "@typescript-eslint/eslint-plugin": "6.11.0",
+    "@typescript-eslint/parser": "6.11.0",
+    "@vitest/coverage-v8": "0.34.6",
+    "eslint": "8.54.0",
+    "eslint-plugin-import": "2.29.0",
+    "eslint-plugin-security": "1.7.1",
+    "prettier": "3.1.0",
+    "typescript": "5.2.2",
+    "valibot": "0.21.0",
+    "vitest": "0.34.6",
+    "tsup": "8.0.0"
+  }
+}
