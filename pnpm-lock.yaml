@@ -24,8 +24,8 @@ devDependencies:
     specifier: 2.29.0
     version: 2.29.0(@typescript-eslint/parser@6.11.0)(eslint@8.54.0)
   eslint-plugin-security:
-    specifier: 1.7.1
-    version: 1.7.1
+    specifier: 2.1.1
+    version: 2.1.1
   prettier:
     specifier: 3.1.0
     version: 3.1.0
@@ -1235,8 +1235,8 @@ packages:
       - supports-color
     dev: true
 
-  /eslint-plugin-security@1.7.1:
-    resolution: {integrity: sha512-sMStceig8AFglhhT2LqlU5r+/fn9OwsA72O5bBuQVTssPCdQAOQzL+oMn/ZcpeUY6KcNfLJArgcrsSULNjYYdQ==}
+  /eslint-plugin-security@2.1.1:
+    resolution: {integrity: sha512-7cspIGj7WTfR3EhaILzAPcfCo5R9FbeWvbgsPYWivSurTBKW88VQxtP3c4aWMG9Hz/GfJlJVdXEJ3c8LqS+u2w==}
     dependencies:
       safe-regex: 2.1.1
     dev: true
